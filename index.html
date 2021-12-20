@@ -3,6 +3,12 @@
     <title>Heads up</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+       script-src 'strict-dynamic' 'nonce-5iPJWpMLWcA4exDJ';
+       style-src 'strict-dynamic' 'nonce-5iPJWpMLWcA4exDJ' https://fonts.googleapis.com; "
+    />
     <link
       nonce="5iPJWpMLWcA4exDJ"
       rel="stylesheet"
@@ -16,10 +22,11 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link nonce="5iPJWpMLWcA4exDJ" rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script defer src="script.js"></script>
+    <script nonce="5iPJWpMLWcA4exDJ" defer src="script.js"></script>
+
     <div class="container">
       <h1>Nasa <i class="fas fa-camera"></i> of the day</h1>
       <div id="image-container"></div>
